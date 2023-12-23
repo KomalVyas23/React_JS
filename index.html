@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://unpkg.com/react@18/umd/react.development.js" crossorigin></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js" crossorigin></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <div id="root">
+
+    </div>
+    <script type="text/babel">
+        // JS + HTML = JSX
+        //Component -> is a function which return HTML
+        function Hello(propsObj){
+            const {name,age} = propsObj;
+          //  return <h1>Hi I am JSX</h1>
+        //  
+        
+        return <div id="section">
+            <h1 id="heading">Hi I am {name}, my age is {age}</h1>
+            </div>
+        }
+
+        function AllHello(){
+            return <div>
+                <Hello name={"Shivangi"} age={30}></Hello>
+                <Hello name={"Dhruv"} age={30}></Hello>
+                <Hello name={"Shubham"} age={30}></Hello>
+                <Hello name={"Abhishek"} age={30}></Hello>
+                <Hello name={"Stanley"} age={30}></Hello>
+                </div>
+        }
+
+        
+
+        ReactDOM.render(<AllHello/>, document.getElementById("root"))
+    </script>
+    
+</body>
+</html>
