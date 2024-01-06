@@ -26,4 +26,9 @@ What is 'to' attribute?
 'to' attr specify the path where the user should be redirected to when they click on a link.
 This value can be string, which will be interpreted as a relative path.
 Or it can be an object, which can spcify absolute path, query parameters and so on.
+
+Commands:
+npm i -D react-router-dom
+OR
+npm i -D react-router-dom@latest
    
